@@ -1,0 +1,44 @@
+html,
+body {
+  background: #D3BECF;
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.content {
+  margin: 10px auto;
+  width: 70%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+header {
+  background: grey;
+  padding: 10px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+.left-nav {
+  float: left;
+}
+
+.right-nav {
+  float: right;
+}

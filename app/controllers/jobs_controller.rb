@@ -3,6 +3,10 @@ class JobsController < ApplicationController
     @jobs = Job.all
   end
 
+  def show
+
+  end
+  
   def edit
     @job = Job.find(params[:id])
   end

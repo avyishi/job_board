@@ -21,7 +21,7 @@ h1 {
 }
 
 header {
-  background: grey;
+  background: transparent;
   padding: 2px;
   ul {
     margin: 0;

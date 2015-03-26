@@ -1,10 +1,10 @@
 class JobsController < ApplicationController
+  before_action :find_job, only: [:show, :edit, :update, :destroy]
   def index
     @jobs = Job.all
   end
 
   def show
-
   end
   
   def edit
@@ -16,8 +16,13 @@ class JobsController < ApplicationController
   end
 
   def create
-    Job.create(job_params)
-    redirect_to jobs_path
+    @job = Job.new(job_params)
+
+    if @job.save
+      redirect_to @job
+    else
+      render "New"
+    end
   end
 
   def update
@@ -36,5 +41,9 @@ class JobsController < ApplicationController
 
   def job_params
     params.require(:job).permit(:title, :description)
+  end
+
+  def find_job
+    @job = Job.find(params[:id])
   end
 end

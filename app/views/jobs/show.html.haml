@@ -1,3 +1,4 @@
-<h1><%= @job.title %></h1>
-<h5><%= link_to "Edit Posting", edit_job_path(job)%></h5>
-<h5><%= link_to 'Delete Posting', job, method: :delete %></h5>
+%h1= @job.title
+%p= @job.description
+
+= link_to "Home", root_path

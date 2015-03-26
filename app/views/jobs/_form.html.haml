@@ -1,13 +1,5 @@
-<%= form_for @job do |f| %>
-  <div>
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-  <div>
-    <%= f.label :description %>
-    <%= f.text_area :description, size: '60x6' %>
-  </div>
-  <div>
-    <%= f.submit %>
-  </div>
-<% end %>
+= simple_form_for(@job, html: { class: 'form-hortizontal'}) do |f|
+  = f.input :title, label: "Job Titie" 
+  = f.input :description, label: "Job Description" 
+  %br/
+  = f.button :submit

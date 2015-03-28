@@ -26,7 +26,7 @@ class JobsController < ApplicationController
   end
 
   def update
-    if @job.update(jobs_params)
+    if @jobs.update(jobs_params)
       redirect_to @job
     else
       render "Edit"

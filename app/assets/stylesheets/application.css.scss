@@ -1,12 +1,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html,
+html {
+  height:100%;
+}
+
 body {
   background: #D3BECF;
   margin:0;
   padding:0;
   height:100%;
+  font-family: 'Lato', sans-serif;
 }
 
 .content {

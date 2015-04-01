@@ -51,9 +51,21 @@ header {
 }
 
 #jobs {
-  .job
-  h2 {
-    font-size: 2.5em
+  .job {
+    padding: 1em 0;
+    border-bottom: 1px solid rgba(250,250,250, 0.5);
+    h2 {
+      font-size: 2.5em;
+      font-weight: 100;
+      margin-bottom: 0;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+    p {
+      color: rgba(250,250,250, 0.5);
+    }
   }
 }
 

@@ -49,6 +49,21 @@ header {
 .right-nav {
   float: right;
 }
+.navbar-default {
+  background-color: white;
+  border-radius: 0;
+  height: 40px;
+  padding: 10px 0;
+  border: none;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-size: 2em;
+  font-weight: 300;
+  color: #1D976C !important;
+}
 
 #jobs {
   .job {
@@ -69,11 +84,6 @@ header {
   }
 }
 
-#footer {
-  width:100%;
-  height:20px;
-  position:absolute;
-  bottom:0;
-  left:0;
-  background:#D3BECF;
+#links {
+  margin-top: 2em;
 }

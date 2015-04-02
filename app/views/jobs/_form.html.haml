@@ -1,6 +1,6 @@
 = simple_form_for(@job, html: { class: 'form-hortizontal'}) do |f|
-  = f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a job category"}
-  = f.input :title, label: "Job Titie" 
-  = f.input :description, label: "Job Description" 
+  = f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a job category"}, input_html: { class: "dropdown-toggle" }
+  = f.input :title, label: "Job Titie", input_html: { class: "form-controller" }
+  = f.input :description, label: "Job Description", input_html: { class: "form-controller" }
   %br/
   = f.button :submit
